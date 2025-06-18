@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Reality Check: 10-Day Course to Fix Your DIY Website Conversions</title>
+    <meta name="description" content="Start today with Episode 1. Based on 150,000+ hours of usability research. Fix what's broken about your DIY website and increase conversions by 35% or more. Private podcast feed works with any app.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fff;
+            border-bottom: 1px solid #e9ecef;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 18px;
+            color: #0066cc;
+        }
+        
+        .header-cta {
+            background-color: #dc3545;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .header-cta:hover {
+            background-color: #c82333;
+        }
+        
+        .hero {
+            background-color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        h1 {
+            font-size: 36px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #212529;
+        }
+        
+        .subheadline {
+            font-size: 20px;
+            color: #6c757d;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .pain-point {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 40px auto;
+            max-width: 600px;
+        }
+        
+        .pain-point h2 {
+            color: #856404;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .stat {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .stat-number {
+            font-size: 48px;
+            font-weight: bold;
+            color: #0066cc;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 16px;
+            color: #6c757d;
+        }
+        
+        .research-badge {
+            background-color: #e7f3ff;
+            border: 1px solid #b3d7ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 30px 0;
+            text-align: center;
+            font-size: 14px;
+            color: #004085;
+        }
+        
+        .episodes {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 40px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .episodes h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .episode-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .episode-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .episode-list li:first-child {
+            background-color: #fff3cd;
+            margin: 0 -20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .episode-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .episode-day {
+            font-weight: bold;
+            color: #0066cc;
+        }
+        
+        .benefits {
+            background-color: #f8f9fa;
+            padding: 60px 20px;
+        }
+        
+        .benefits h2 {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .benefit {
+            text-align: center;
+        }
+        
+        .benefit-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .benefit h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .testimonial {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 40px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .testimonial-text {
+            font-size: 20px;
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #495057;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+        }
+        
+        .cta-section {
+            background-color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .price {
+            font-size: 48px;
+            font-weight: bold;
+            color: #28a745;
+            margin: 20px 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #dc3545;
+            color: white;
+            padding: 20px 40px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+        
+        .cta-button:hover {
+            background-color: #c82333;
+            transform: translateY(-2px);
+        }
+        
+        .guarantee {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px auto;
+            max-width: 500px;
+            color: #155724;
+        }
+        
+        .faq {
+            background-color: #f8f9fa;
+            padding: 60px 20px;
+        }
+        
+        .faq h2 {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .faq-item {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .mobile-only {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+            
+            .subheadline {
+                font-size: 18px;
+            }
+            
+            .stat-number {
+                font-size: 36px;
+            }
+            
+            .episodes {
+                padding: 20px;
+            }
+            
+            .mobile-only {
+                display: block;
+            }
+            
+            .desktop-only {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">Website Reality Check</div>
+            <a href="https://privatepodcasts.joetaylorjr.com/website-reality-check" class="header-cta desktop-only">Start Episode 1</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Your Beautiful Website Is Costing You $180,000 a Year</h1>
+            <p class="subheadline">10-day audio course reveals why DIY websites fail to convert—and exactly how to fix yours using research from 150,000+ hours of user testing</p>
+            <p style="font-size: 18px; color: #28a745; margin-top: 20px;">🎧 Start listening to Episode 1 immediately • New episodes delivered daily</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="pain-point">
+            <h2>Sound Familiar?</h2>
+            <p>You spent months building a "gorgeous" Squarespace site. Professional photos, elegant design, glowing testimonials. Everyone loves how it looks.</p>
+            <p><strong>But visitors aren't becoming customers.</strong></p>
+            <p>Your analytics show people browsing for 47 seconds before leaving. Your conversion rate is stuck below 3%. And you have no idea why.</p>
+        </div>
+
+        <div class="research-badge">
+            🔬 Based on research from Nielsen Norman Group and Baymard Institute analyzing 150,000+ hours of real user behavior
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <span class="stat-number">85.65%</span>
+                <span class="stat-label">Mobile cart abandonment rate on DIY sites</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">35%+</span>
+                <span class="stat-label">Average conversion improvement possible</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">$260B</span>
+                <span class="stat-label">Recoverable revenue lost to poor UX</span>
+            </div>
+        </div>
+
+        <div class="episodes">
+            <h2>Your 10-Day Transformation Schedule</h2>
+            <p style="text-align: center; margin-bottom: 20px; color: #6c757d;">Start today with Episode 1 • New episodes delivered daily to your podcast app</p>
+            <ul class="episode-list">
+                <li><span class="episode-day">Day 1 (Today!):</span> Why Beautiful Websites Don't Convert (and the $175K fix)</li>
+                <li><span class="episode-day">Day 2:</span> The Homepage Confusion Crisis (70% are doing this wrong)</li>
+                <li><span class="episode-day">Day 3:</span> Mobile Users Are Abandoning You (fix the 85% problem)</li>
+                <li><span class="episode-day">Day 4:</span> Your Value Proposition Is Invisible (pass the 5-second test)</li>
+                <li><span class="episode-day">Day 5:</span> The Call-to-Action Desert (one button = 266% more conversions)</li>
+                <li><span class="episode-day">Day 6:</span> Trust Signals Your DIY Site Is Missing (42% conversion boost)</li>
+                <li><span class="episode-day">Day 7:</span> Navigation That Leads Nowhere (22% can't find what they need)</li>
+                <li><span class="episode-day">Day 8:</span> The Contact Page That Kills Conversions</li>
+                <li><span class="episode-day">Day 9:</span> Speed and Performance Reality Check</li>
+                <li><span class="episode-day">Day 10:</span> Measuring What Actually Matters</li>
+            </ul>
+        </div>
+        
+        <div style="background-color: #e7f3ff; border: 1px solid #b3d7ff; padding: 20px; border-radius: 8px; margin: 30px 0; text-align: center;">
+            <p style="font-size: 18px; color: #004085; margin: 0;"><strong>🎧 Listen anywhere:</strong> Apple Podcasts • Spotify • Overcast • Google Podcasts • Or our secure member portal</p>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h2>What You'll Learn</h2>
+            <div class="benefit-grid">
+                <div class="benefit">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Strategic Fixes</h3>
+                    <p>Step-by-step implementation guides you can apply immediately—no coding required</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">📊</div>
+                    <h3>Research-Backed</h3>
+                    <p>Every recommendation based on actual user behavior data, not opinions</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Quick Wins</h3>
+                    <p>5-minute fixes that show results within days, not months</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">📱</div>
+                    <h3>Perfect Pacing</h3>
+                    <p>One episode per day prevents overwhelm and creates momentum for real change</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial section - uncomment when testimonials are available
+    <section class="container">
+        <div class="testimonial">
+            <p class="testimonial-text">"After implementing just the Day 1 changes, our conversion rate went from 1.2% to 2.8% in the first week. That's more than doubling our sales from the same traffic."</p>
+            <p class="testimonial-author">— Sarah Martinez, Coffee Roaster</p>
+        </div>
+    </section>
+    -->
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Start Fixing Your Website Today</h2>
+            <p class="price">Only $27</p>
+            <p style="font-size: 18px; color: #6c757d; margin-bottom: 30px;">Get instant access to Episode 1, then receive a new episode daily for 10 days</p>
+            <a href="https://privatepodcasts.joetaylorjr.com/website-reality-check" class="cta-button">Start Episode 1 Now</a>
+            <div style="margin: 30px auto; max-width: 600px;">
+                <p style="font-size: 16px; margin-bottom: 15px;"><strong>How it works:</strong></p>
+                <p>✓ Instant access to Episode 1: "Why Beautiful Websites Don't Convert"</p>
+                <p>✓ New episodes automatically delivered each day for 9 more days</p>
+                <p>✓ Listen in any podcast app (Apple, Spotify, Overcast, etc.) or our secure portal</p>
+                <p>✓ No special software needed—just your favorite way to listen</p>
+            </div>
+            <div class="guarantee">
+                <strong>🛡️ 30-Day Money-Back Guarantee</strong><br>
+                Try the entire course risk-free. If you don't see improvements in your conversion metrics, get a full refund.
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2>Questions?</h2>
+            
+            <div class="faq-item">
+                <p class="faq-question">How do I access the course?</p>
+                <p>After purchase, you'll get instant access to Episode 1. You can listen immediately in our secure member portal or add the private podcast feed to your favorite podcast app (Apple Podcasts, Spotify, Overcast, etc.). No special software required!</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">When do I get all the episodes?</p>
+                <p>Episode 1 is available immediately. New episodes are automatically delivered each day for the next 9 days. This pacing helps you implement changes step-by-step instead of getting overwhelmed.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">Who is this course for?</p>
+                <p>Business owners who built their own websites on Squarespace, Wix, or GoDaddy and struggle with low conversion rates despite having "professional-looking" sites.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">Do I need technical skills?</p>
+                <p>No. Every fix is explained in plain English with step-by-step instructions for your specific platform. If you can build a site on Squarespace or Wix, you can implement these improvements.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">How long are the episodes?</p>
+                <p>Each episode is 18-22 minutes of focused, actionable content. Listen during your commute, lunch break, or while working on your site.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">What if I fall behind?</p>
+                <p>No worries! Once an episode is delivered, it's yours forever. Listen at your own pace. The daily delivery just helps create momentum and prevents overwhelm.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Stop Losing Customers to Bad UX</h2>
+            <p style="font-size: 20px; margin-bottom: 30px;">Join thousands of business owners transforming their beautiful-but-broken websites into conversion machines.</p>
+            <a href="https://privatepodcasts.joetaylorjr.com/website-reality-check" class="cta-button">Start Episode 1 for $27</a>
+            <p style="color: #6c757d;">Secure checkout • Episode 1 instantly • New episodes daily</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Calufrax, Inc. Based on research from Nielsen Norman Group and Baymard Institute.</p>
+            <p style="margin-top: 10px; font-size: 14px;">Questions? Email inquiries@johnsandtaylor.com</p>
+        </div>
+    </footer>
+
+    <div class="mobile-only" style="position: fixed; bottom: 0; left: 0; right: 0; background: #dc3545; padding: 15px; text-align: center; box-shadow: 0 -2px 4px rgba(0,0,0,0.1);">
+        <a href="https://privatepodcasts.joetaylorjr.com/website-reality-check" style="color: white; text-decoration: none; font-weight: bold;">Start Episode 1 for $27 →</a>
+    </div>
+</body>
+</html>
