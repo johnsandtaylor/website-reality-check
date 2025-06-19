@@ -301,11 +301,31 @@
             margin-bottom: 10px;
         }
         
+        .guarantee a {
+            color: #0c5460;
+            text-decoration: underline;
+        }
+        
+        .guarantee a:hover {
+            color: #155724;
+        }
+        
         footer {
             background-color: #343a40;
             color: #fff;
             padding: 40px 20px;
             text-align: center;
+        }
+        
+        footer a {
+            color: #adb5bd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        footer a:hover {
+            color: #fff;
+            text-decoration: underline;
         }
         
         .host-section {
@@ -328,6 +348,10 @@
         }
         
         @media (max-width: 768px) {
+            body {
+                padding-bottom: 60px;
+            }
+            
             h1 {
                 font-size: 28px;
             }
@@ -365,8 +389,17 @@
             .desktop-only {
                 display: none;
             }
+            
+            .legal-links a {
+                display: block;
+                margin: 10px 0 !important;
+            }
         }
     </style>
+    
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="IWITGBES" defer></script>
+    <!-- / Fathom -->
 </head>
 <body>
     <header>
@@ -509,7 +542,7 @@
             </div>
             <div class="guarantee">
                 <strong>🛡️ 30-Day Money-Back Guarantee</strong><br>
-                Try the entire course risk-free. If you don't see improvements in your conversion metrics, get a full refund.
+                Try the entire course risk-free. If you don't see improvements in your conversion metrics, get a full refund. <span style="font-size: 12px;">See <a href="https://app.getterms.io/policy/GQGq1/return" target="_blank" rel="noopener">Return Policy</a> for details.</span>
             </div>
         </div>
     </section>
@@ -563,11 +596,19 @@
         <div class="container">
             <p>&copy; 2025 Calufrax, Inc. in partnership with Johns & Taylor</p>
             <p style="margin-top: 10px;">Based on research from Nielsen Norman Group and Baymard Institute.</p>
-            <p style="margin-top: 10px; font-size: 14px;">Questions? Email inquiries@johnsandtaylor.com</p>
+            <p style="margin-top: 10px; font-size: 14px;">Questions? Email <a href="mailto:inquiries@johnsandtaylor.com" style="color: #adb5bd; text-decoration: underline;">inquiries@johnsandtaylor.com</a></p>
+            <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #495057;">
+                <p style="font-size: 14px; line-height: 1.8;" class="legal-links">
+                    <a href="https://app.getterms.io/view/GQGq1/terms-of-service/en-us" style="margin-right: 15px;" target="_blank" rel="noopener">Terms of Service</a>
+                    <a href="https://app.getterms.io/view/GQGq1/privacy/en-us" style="margin-right: 15px;" target="_blank" rel="noopener">Privacy Policy</a>
+                    <a href="https://app.getterms.io/policy/GQGq1/return" style="margin-right: 15px;" target="_blank" rel="noopener">Return Policy</a>
+                    <a href="https://app.getterms.io/view/GQGq1/acceptable-use/en-us" target="_blank" rel="noopener">Acceptable Use Policy</a>
+                </p>
+            </div>
         </div>
     </footer>
 
-    <div class="mobile-only" style="position: fixed; bottom: 0; left: 0; right: 0; background: #dc3545; padding: 15px; text-align: center; box-shadow: 0 -2px 4px rgba(0,0,0,0.1);">
+    <div class="mobile-only" style="position: fixed; bottom: 0; left: 0; right: 0; background: #dc3545; padding: 15px; text-align: center; box-shadow: 0 -2px 4px rgba(0,0,0,0.1); z-index: 100;">
         <a href="https://privatepodcasts.joetaylorjr.com/website-reality-check" style="color: white; text-decoration: none; font-weight: bold;">Start Episode 1 for $27 →</a>
     </div>
 </body>
